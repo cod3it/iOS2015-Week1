@@ -32,18 +32,23 @@ func takesArray(var shopListArray: [String]) {
     
     var sortedArray = shopListArray.sort()
 
-    var capitalLetterArray = ????
+    var capitalLetterArray = [String]()
     
     for index in 0 .. < sortedArray.count {
          
-        let string = sortedArray[index] ????
-        let nextString = sortedArray[index + 1] ???
+        let string = sortedArray[index]
+        var letter = String(string[string.startIndex])
         
-        if ??? == ??? ???
+        if !letters.contains(letter) {
+            letters.append(letter)
+        }
     
     return
     
  }
+
+returnArray(shopListArray)
+    
 //: Create a function that searches the items array and returns all items that match the input string. Ignore uppercase/lowercase differences.
  func searchArray(var shopListArray: [String]) {
     
